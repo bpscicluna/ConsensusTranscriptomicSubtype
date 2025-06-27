@@ -11,9 +11,9 @@ From source:
 install.packages("ConsensusTranscriptomicSubtype_0.1.4.tar.gz", repos = NULL, type = "source")
 ```
 
-Or using `devtools` after uploading to GitHub:
+Or using `devtools`:
 ```r
-devtools::install_github("yourusername/ConsensusTranscriptomicSubtype")
+devtools::install_github("bpscicluna/ConsensusTranscriptomicSubtype")
 ```
 
 ---
@@ -69,45 +69,6 @@ result <- run_subtype_classifier(
 # View predicted classes
 result$predictions
 ```
-
----
-
-## ⚙️ Continuous Integration (GitHub Actions)
-
-To automatically check your package:
-
-1. In your GitHub repo, create a folder: `.github/workflows/`
-2. Add a file named `R-CMD-check.yaml` with the following:
-
-```yaml
-name: R-CMD-check
-
-on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
-
-jobs:
-  R-CMD-check:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v3
-      - uses: r-lib/actions/setup-r@v2
-      - uses: r-lib/actions/setup-r-dependencies@v2
-        with:
-          extra-packages: |
-            devtools
-            roxygen2
-
-      - name: Check
-        run: |
-          R CMD build .
-          R CMD check --no-manual --as-cran *.tar.gz
-```
-
-Then commit and push.
 
 ---
 
