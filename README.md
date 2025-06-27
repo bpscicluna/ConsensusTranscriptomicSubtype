@@ -1,6 +1,6 @@
-# ConsensusTranscriptomicSubtype
+# Consensus Transcriptomic Subtypes of Sepsis
 
-Classify patients into **Consensus Transcriptomic Subtypes (CTS)** of **sepsis** using gene expression data. This package implements batch correction, supervised classification via random forests, and optional visualization of results.
+Classify patients into **Consensus Transcriptomic Subtypes (CTS)** of **Sepsis** using gene expression data. This package implements batch correction, supervised classification via random forests, and optional visualization of results.
 
 ---
 
