@@ -1,0 +1,18 @@
+Package: ConsensusTranscriptomicSubtype
+Type: Package
+Title: Classify Consensus Transcriptomic Subtypes of Sepsis
+Version: 0.1.4
+Authors@R: person("Your", "Name", email = "your@email.com", role = c("aut", "cre"))
+Description: Classifies new patients into Consensus Transcriptomic Subtypes (CTS) of sepsis using gene expression data. Includes batch correction, classification, and visualization.
+Depends: R (>= 4.1.0)
+Imports:
+    sva,
+    mixOmics,
+    randomForest,
+    pheatmap,
+    RColorBrewer,
+    cluster,
+    dplyr
+License: MIT
+Encoding: UTF-8
+LazyData: true
